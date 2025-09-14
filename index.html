@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AR cultural heritage preservation platfrom</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <video autoplay muted loop playsinline preload="auto" id="hero-video" poster="assets/hero-poster.jpg">
+      <source src="assets/hero.mp4" type="video/mp4">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+    <div class="overlay"></div>
+
+    <div class="content container">
+      <h1 class="title">"Travel Back in Time...No ticket required!"</h1>
+      <p class="tagline"><span class="neon">Experience the Past</span> in Augmented Reality</p>
+
+      <div class="cta-buttons">
+        <button class="cta" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Explore Now</button>
+        <a class="ghost-cta" href="#demo" role="button">View Demo</a>
+      </div>
+
+      <div class="badges">
+        <span class="badge">Digital Preservation</span>
+        <span class="badge">3D / AR Replicas</span>
+        <span class="badge">Gamified Learning</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES SECTION -->
+<section class="features" id="features">
+  <div class="container">
+    <h2 class="neon reveal">Platform Features</h2>
+    <div class="features-grid">
+      
+      <div class="card reveal">
+        <i class="fa-solid fa-database feature-icon"></i>
+        <h4>Digital Preservation / Archive</h4>
+        <p>Safeguarding cultural data in secure, scalable archives.</p>
+      </div>
+
+      <div class="card reveal">
+        <i class="fa-solid fa-cube feature-icon"></i>
+        <h4>3D/AR Replicas of Past Form</h4>
+        <p>Rebuild monuments and artifacts for AR/VR experiences.</p>
+      </div>
+
+      <div class="card reveal">
+        <i class="fa-solid fa-users feature-icon"></i>
+        <h4>User-Generated Data (Crowdsourced)</h4>
+        <p>Community-driven heritage documentation.</p>
+      </div>
+
+      <div class="card reveal">
+        <i class="fa-solid fa-book-open feature-icon"></i>
+        <h4>Storytelling & Narration</h4>
+        <p>Immersive historical storytelling with AR interaction.</p>
+      </div>
+
+      <div class="card reveal">
+        <i class="fa-solid fa-scale-balanced feature-icon"></i>
+        <h4>Heritage Law / Awareness</h4>
+        <p>Legal awareness and cultural preservation guidelines.</p>
+      </div>
+
+      <div class="card reveal">
+        <i class="fa-solid fa-gamepad feature-icon"></i>
+        <h4>Gamified Learning</h4>
+        <p>Engaging AR heritage games for younger audiences.</p>
+      </div>
+
+      <div class="card reveal">
+        <i class="fa-solid fa-clock-rotate-left feature-icon"></i>
+        <h4>Time-Travel AR</h4>
+        <p>See heritage evolve across centuries in AR.</p>
+      </div>
+
+      <div class="card reveal">
+        <i class="fa-solid fa-vr-cardboard feature-icon"></i>
+        <h4>Immersive Virtual Tours</h4>
+        <p>Explore heritage sites in VR and AR anytime.</p>
+      </div>
+
+      <div class="card reveal">
+        <i class="fa-solid fa-globe feature-icon"></i>
+        <h4>Scalability (Global Reach)</h4>
+        <p>Platform designed to preserve heritage worldwide.</p>
+      </div>
+      <div class="card reveal">
+  <i class="fa-solid fa-location-dot feature-icon"></i>
+  <h4>Location Based Heritage</h4>
+  <p>Discover heritage sites based on your location.</p>
+</div>
+      
+    </div>
+  </div>
+</section>
+
+
+  <!-- About -->
+  <section class="about container">
+    <div class="about-inner">
+      <div class="about-text glass-panel reveal">
+        <h3>Our Mission</h3>
+        <p>To preserve and share cultural heritage using AR — empowering communities, engaging youth, and protecting stories.</p>
+        <button class="cta" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">Try a Demo</button>
+      </div>
+      <div class="about-media glass-panel reveal">
+        <h4>Augmented Reality Insights</h4>
+        <p>3D scanning • Story layers • Community notes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO SECTION -->
+<section class="demo" id="demo">
+  <div class="container">
+    <h2 class="neon reveal">Konark Sun Temple AR / 3D Demo</h2>
+    <p class="reveal demo-text">
+      Explore the majestic Konark Sun Temple in 3D. Rotate, zoom, or view in fullscreen.
+      On mobile, tap the fullscreen/VR options for an immersive experience.
+    </p>
+
+    <div class="demo-frame reveal">
+      <!-- Sketchfab embed -->
+      <iframe
+        title="Sun Temple Konark by moniln"
+        src="https://sketchfab.com/models/6cc905be2ae34e8091eb1eaa84a17738/embed"
+        frameborder="0"
+        allow="autoplay; fullscreen; vr"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Model Viewer Embed -->
+    
+  </div>
+</section>
+  <!-- Contact -->
+  <section class="contact container">
+    <h2>Share your Experience...!</h2>
+    <form onsubmit="event.preventDefault(); handleSubmit();">
+      <div>
+        <input id="name" placeholder="Your name" required />
+        <input id="email" type="email" placeholder="Email address" required />
+        <textarea id="message" placeholder="Your message"></textarea>
+      </div>
+      <div>
+        <button class="submit" type="submit">Send Message</button>
+        <p class="muted">Or email: <a href="mailto:hello@arheritage.org">hello@arheritage.org</a></p>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <p>&copy; <span id="year"></span> AR Cultural Heritage Preservation Platform</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
